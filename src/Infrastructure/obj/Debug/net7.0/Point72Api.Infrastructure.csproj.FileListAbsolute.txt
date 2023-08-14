@@ -1,0 +1,5 @@
+C:\Projects\Learn\point72\Point72Api\src\Infrastructure\obj\Debug\net7.0\Point72Api.Infrastructure.csproj.AssemblyReference.cache
+C:\Projects\Learn\point72\Point72Api\src\Infrastructure\obj\Debug\net7.0\Point72Api.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Learn\point72\Point72Api\src\Infrastructure\obj\Debug\net7.0\Point72Api.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\Learn\point72\Point72Api\src\Infrastructure\obj\Debug\net7.0\Point72Api.Infrastructure.AssemblyInfo.cs
+C:\Projects\Learn\point72\Point72Api\src\Infrastructure\obj\Debug\net7.0\Point72Api.Infrastructure.csproj.CoreCompileInputs.cache

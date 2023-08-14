@@ -1,0 +1,66 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "MinimalApiBoilerplate.Application/1.0.0": {
+        "dependencies": {
+          "Ardalis.GuardClauses": "4.1.1",
+          "MinimalApiBoilerplate.Domain": "1.0.0",
+          "MinimalApiBoilerplate.Domain.Reference": "1.0.0.0"
+        },
+        "runtime": {
+          "MinimalApiBoilerplate.Application.dll": {}
+        }
+      },
+      "Ardalis.GuardClauses/4.1.1": {
+        "runtime": {
+          "lib/net7.0/Ardalis.GuardClauses.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.1.1.0"
+          }
+        }
+      },
+      "MinimalApiBoilerplate.Domain/1.0.0": {
+        "runtime": {
+          "MinimalApiBoilerplate.Domain.dll": {}
+        }
+      },
+      "MinimalApiBoilerplate.Domain.Reference/1.0.0.0": {
+        "runtime": {
+          "MinimalApiBoilerplate.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MinimalApiBoilerplate.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ardalis.GuardClauses/4.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+UcJ2s+gf2wMNrwadCaHZV2DMcGgBU1t22A+jm40P4MHQRLy9hcleGy5xdVWd4dXZPa5Vlp4TG5xU2rhoDYrBA==",
+      "path": "ardalis.guardclauses/4.1.1",
+      "hashPath": "ardalis.guardclauses.4.1.1.nupkg.sha512"
+    },
+    "MinimalApiBoilerplate.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MinimalApiBoilerplate.Domain.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
