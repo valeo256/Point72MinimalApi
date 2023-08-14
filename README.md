@@ -10,5 +10,7 @@ To work with the api, you will need to:
 2. Run the application and add the swagger subdirectory to the url (https://localhost:7110/swagger/index.html)
 3. Choose the endpoint on a dashboard and "Try it out"
 
+You can also run tests in Test Explorer.
+
 You should use .net 7 and Visual Studion 2022 or alternative.
 
