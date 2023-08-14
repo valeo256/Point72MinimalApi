@@ -361,3 +361,15 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 .idea
+/src/Application/bin
+/src/Application/obj
+/src/Domain/obj
+/src/Domain/bin
+/src/Infrastructure/obj
+/src/Infrastructure/bin
+/src/WebApi/obj
+/src/WebApi/bin
+/test/WebApi.Tests.Unit/obj
+/test/WebApi.Tests.Unit/bin
+/test/WebApi.Tests.Integration/obj
+/test/WebApi.Tests.Integration/bin

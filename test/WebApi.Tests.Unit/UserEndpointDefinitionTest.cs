@@ -1,10 +1,7 @@
 using Domain.Entities;
-using FluentAssertions;
-using Microsoft.AspNetCore.Http.HttpResults;
 using NSubstitute;
 using Application.Common.Interfaces;
 using MediatR;
-using Application.RequestHandlers.User.Queries.GetUserQuery;
 
 namespace WebApi.Tests.Unit
 {

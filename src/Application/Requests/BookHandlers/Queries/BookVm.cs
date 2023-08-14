@@ -1,6 +1,9 @@
-﻿namespace Application.Requests.BookHandlers.Queries;
+﻿using Application.Common.Mapping;
+using Domain.Entities;
 
-public class BookVm
+namespace Application.Requests.BookHandlers.Queries;
+
+public class BookVm : IMapFrom<Book>
 {
     public long Id { get; init; }
 
@@ -14,7 +17,7 @@ public class BookVm
     {
         public Mapping()
         {
-            CreateMap<Domain.Entities.Book, BookVm>();
+            CreateMap<Book, BookVm>();
         }
     }
 }

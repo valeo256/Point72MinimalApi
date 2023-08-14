@@ -1,6 +1,0 @@
-{
-  "Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projects\\Learn\\point72\\Point72Api\\src\\Application",
-  "Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projects\\Learn\\point72\\Point72Api\\src\\Domain",
-  "Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projects\\Learn\\point72\\Point72Api\\src\\Infrastructure",
-  "WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Projects\\Learn\\point72\\Point72Api\\src\\WebApi"
-}
