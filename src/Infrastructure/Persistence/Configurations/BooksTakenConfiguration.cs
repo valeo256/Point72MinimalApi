@@ -8,9 +8,9 @@ public class BooksTakenConfiguration : IEntityTypeConfiguration<BooksTaken>
     public void Configure(EntityTypeBuilder<BooksTaken> builder)
     {
         builder
-            .HasNoKey()
             .ToTable("BooksTaken");
 
+        builder.HasKey(bt => new { bt.BookId, bt.UserId });
         builder.Property(e => e.BookId).HasColumnName("BookID");
         builder.Property(e => e.DateTaken).HasColumnType("datetime");
         builder.Property(e => e.UserId).HasColumnName("UserID");

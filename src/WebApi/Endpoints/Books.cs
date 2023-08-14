@@ -10,7 +10,7 @@ public class Books : EndpointGroupBase
 {
     public override void Map(WebApplication app)
     {
-        app.MapGroup(this).MapGet("/invertwords", InvertwordsForTitle)
+        app.MapGroup(this).MapGet("/invertwords/{id}", InvertWordsForTitle)
             .AllowAnonymous()
             .Produces(200, typeof(BookVm))
             .Produces(404);
@@ -20,7 +20,7 @@ public class Books : EndpointGroupBase
             .Produces(404);
     }
 
-    public async Task<BookVm> InvertwordsForTitle(ISender sender, long id)
+    public async Task<BookVm> InvertWordsForTitle(ISender sender, long id)
     {
         var bookVm = await sender.Send(new GetBookQuery(id));
         var invertedTitle = StringFormatUtils.InvertWordsInSentence(bookVm.Title);

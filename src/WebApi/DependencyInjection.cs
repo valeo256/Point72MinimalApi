@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.OpenApi.Models;
 using Application.Common.Interfaces;
-using Application.Common.Services;
 using WebApi.Services;
 using Microsoft.AspNetCore.Mvc;
 using Infrastructure.Persistence;
@@ -13,8 +12,6 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddWebServices(this IServiceCollection services)
     {
-        services.AddSingleton<IUserService, UserService>();
-
         services.AddScoped<ICurrentUserService, CurrentUserService>();
 
         services.AddHttpContextAccessor();

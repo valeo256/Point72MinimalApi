@@ -29,7 +29,7 @@ public class MappingTests
 
     [Theory]
     [InlineData(typeof(Book), typeof(BookVm))]
-    [InlineData(typeof(UserDetailsReportDto), typeof(User))]
+    [InlineData(typeof(User), typeof(UserDetailsReportDto))]
     public void ShouldSupportMappingFromSourceToDestination(Type source, Type destination)
     {
         var instance = GetInstanceOf(source);       
