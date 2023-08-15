@@ -18,8 +18,8 @@ public class BookEndpointsTests
     {
         //Arrange
         var id = 1;
-        var book = new BookVm { Id = 1, AuthorId = 1, Title = "Test title", Description = "Test description" };
-        var bookVm = _sender.Send(new GetBookQuery(id)).Returns(book);
+        var book = new BookVm { Id = 1, AuthorId = 1, Title = "title Test", Description = "Test description" };
+        var bookVm = _sender.Send(new InvertTitleOfBook(id)).Returns(book);
 
         using var app = new TestApplicationFactory(x =>
         {

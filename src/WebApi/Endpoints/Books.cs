@@ -22,10 +22,7 @@ public class Books : EndpointGroupBase
 
     public async Task<BookVm> InvertWordsForTitle(ISender sender, long id)
     {
-        var bookVm = await sender.Send(new GetBookQuery(id));
-        var invertedTitle = StringFormatUtils.InvertWordsInSentence(bookVm.Title);
-
-        bookVm.Title = invertedTitle;
+        var bookVm = await sender.Send(new InvertTitleOfBook(id));
 
         return bookVm;
     }
