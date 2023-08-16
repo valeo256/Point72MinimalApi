@@ -1,6 +1,4 @@
-﻿using Application.Common.Utils;
-using Application.Requests.BookHandlers.Queries;
-using Domain.Enums;
+﻿using Application.Requests.BookHandlers.Queries;
 using MediatR;
 using WebApi.Infrastructure;
 
@@ -27,12 +25,10 @@ public class Books : EndpointGroupBase
         return bookVm;
     }
 
-    public async Task<IEnumerable<BookVm>> SearchBooks(ISender sender, string? authorName, 
-        string? searchText, long? userId, 
-        CombinationConditionOfEntities combinationCondition = CombinationConditionOfEntities.And)
+    public async Task<IEnumerable<BookVm>> SearchBooks(ISender sender,
+        [AsParameters] SerachBooksQuery query)
     {
-        var booksVm = await sender.Send(new SerachBooksQuery { AuthorName = authorName, 
-            SearchText = searchText, UserId = userId, CombinationCondition = combinationCondition });
+        var booksVm = await sender.Send(query);
 
         return booksVm;
     }
